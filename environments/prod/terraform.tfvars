@@ -1,14 +1,14 @@
 rgs = {
   rg1 = {
     name     = "rg-chor-prod"
-    location = "centralindia"
+    location = "westus"
   }
 }
 
 vnets = {
   vnet1 = {
     name                = "vnet-chor-prod"
-    location            = "centralindia"
+    location            = "westus"
     resource_group_name = "rg-chor-prod"
     address_space       = ["10.0.0.0/16"]
   }
@@ -51,13 +51,13 @@ public_ips = {
   pip_bastion = {
     public_ip_name      = "pip-bastion-prod"
     resource_group_name = "rg-chor-prod"
-    location            = "centralindia"
+    location            = "westus"
     allocation_method   = "Static"
   }
   pip_appgw = {
     public_ip_name      = "pip-appgw-prod"
     resource_group_name = "rg-chor-prod"
-    location            = "centralindia"
+    location            = "westus"
     allocation_method   = "Static"
   }
 }
@@ -65,7 +65,7 @@ public_ips = {
 vms = {
   frontend_1 = {
     nic_name        = "frontend-vm-nic-1-prod"
-    location        = "centralindia"
+    location        = "westus"
     rg_name         = "rg-chor-prod"
     nic_subnet_name = "frontend-subnet-prod"
     nic_vnet_name   = "vnet-chor-prod"
@@ -81,7 +81,7 @@ vms = {
   }
   frontend_2 = {
     nic_name        = "frontend-vm-nic-2-prod"
-    location        = "centralindia"
+    location        = "westus"
     rg_name         = "rg-chor-prod"
     nic_subnet_name = "frontend-subnet-prod"
     nic_vnet_name   = "vnet-chor-prod"
@@ -97,7 +97,7 @@ vms = {
   }
   backend_1 = {
     nic_name        = "backend-vm-nic-1-prod"
-    location        = "centralindia"
+    location        = "westus"
     rg_name         = "rg-chor-prod"
     nic_subnet_name = "backend-subnet-prod"
     nic_vnet_name   = "vnet-chor-prod"
@@ -113,7 +113,7 @@ vms = {
   }
   backend_2 = {
     nic_name        = "backend-vm-nic-2-prod"
-    location        = "centralindia"
+    location        = "westus"
     rg_name         = "rg-chor-prod"
     nic_subnet_name = "backend-subnet-prod"
     nic_vnet_name   = "vnet-chor-prod"
@@ -129,7 +129,7 @@ vms = {
   }
   database_1 = {
     nic_name        = "database-vm-nic-prod"
-    location        = "centralindia"
+    location        = "westus"
     rg_name         = "rg-chor-prod"
     nic_subnet_name = "database-subnet-prod"
     nic_vnet_name   = "vnet-chor-prod"
@@ -148,7 +148,7 @@ vms = {
 bastions = {
   bastion1 = {
     name           = "bastion-prod"
-    location       = "centralindia"
+    location       = "westus"
     rg_name        = "rg-chor-prod"
     subnet_name    = "AzureBastionSubnet"
     vnet_name      = "vnet-chor-prod"
@@ -159,7 +159,7 @@ bastions = {
 app_gateways = {
   appgw1 = {
     name           = "appgw-prod"
-    location       = "centralindia"
+    location       = "westus"
     rg_name        = "rg-chor-prod"
     subnet_name    = "AppGatewaySubnet"
     vnet_name      = "vnet-chor-prod"
@@ -170,7 +170,7 @@ app_gateways = {
 load_balancers = {
   lb1 = {
     name        = "lb-backend-prod"
-    location    = "centralindia"
+    location    = "westus"
     rg_name     = "rg-chor-prod"
     subnet_name = "backend-subnet-prod"
     vnet_name   = "vnet-chor-prod"
@@ -179,8 +179,8 @@ load_balancers = {
 
 key_vaults = {
   kv1 = {
-    name        = "kv-chor-prod-123"
-    location    = "centralindia"
+    name        = "kv-chor-prod-114223"
+    location    = "westus"
     rg_name     = "rg-chor-prod"
     secret_name = "admin-password"
   }
