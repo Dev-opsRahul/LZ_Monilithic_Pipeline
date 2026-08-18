@@ -39,7 +39,7 @@ jobs:
       - name: Set Azure Subscription
         run: |
           az account set \
-            --subscription "839ecf1eye -413b-4c72-9743-cf7baf7b906a"
+            --subscription "839ecf1e-413b-4c72-9743-cf7baf7b906a"
 
       - name: Check Azure Login
         run: az account show
@@ -87,7 +87,7 @@ jobs:
       - name: Set Azure Subscription
         run: |
           az account set \
-            --subscription "839ecf1eye -413b-4c72-9743-cf7baf7b906a"
+            --subscription "839ecf1e-413b-4c72-9743-cf7baf7b906a"
 
       - name: Check Azure Login
         run: az account show
